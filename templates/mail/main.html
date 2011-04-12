@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block extra_cssstyle %}
+{% endblock %}
+
+{% block extra_javascript %}
+{% endblock %}
+
+{% block title %}Email{% endblock %}
+{% block content %}
+
+
+<div id="spinner"></div>
+
+
+<div id="page">
+
+<div id="leftbar">
+	<div id="leftbar_toolbar">
+		<a href="#"><img src="/site_media/images/mail-get.png" alt="Check For New Mail" title="Check For New Mail" /></a>
+		<a href="#" id="newmaillink"><img src="/site_media/images/mail-new.png" alt="New Mail" title="Compose New Mail" /></a>
+<!-- FIXME don't use the admin site's logout -->
+		<a href="/admin/logout/"><img src="/site_media/images/system-log-out.png" alt="Logout" title="Logout" /></a>
+        <a href="#" id="prefslink"><img src="/site_media/images/configure.png" alt="Prefs" title="Preferences" /></a>
+<!--		<a href="#" onclick="showSpinner(); return false;">Show</a>
+		<a href="#" onclick="hideSpinner(); return false;">Hide</a>-->
+	</div>
+    <div id="folderlist">
+		<div id="foldertree"></div>
+		<div id="foldertree2"></div>
+    </div>
+    <div id="leftbar_bottom_info">
+    </div>
+</div>
+
+<noscript><h1>This site requires javascript to be enabled</h1></noscript>
+
+
+
+
+
+<div id="contentpane">
+
+<div id="msglist"></div>
+
+</div>
+
+
+<div id="test"></div>
+
+
+</div><!-- end page -->
+
+
+{% endblock %}
