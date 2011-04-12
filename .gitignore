@@ -1,3 +1,9 @@
 .svn
 *.pyc
 .DS_Store
+.Python
+.cvsignore
+bin/
+include/
+lib/
+
